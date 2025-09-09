@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
 });
 toTop?.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
 
-// === Data (edit here) ===
+// === Certifications (update images/links as needed) ===
 const CERTS = [
   { title: 'AWS Certified Solutions Architect – Associate', img: '/assets/img/certs/cert-aws-saa-600.png', url: 'https://www.credly.com/badges/16d97883-91d2-4d11-9e1b-7238f37c5daa?source=linked_in_profile', provider: 'Amazon Web Services' },
   { title: 'Complete Python Bootcamp',                     img: '/assets/img/certs/cert-python-bootcamp-600.png', url: 'https://ude.my/UC-509b1469-45c4-4d4b-a144-d89f1307ceec', provider: 'Udemy' },
@@ -49,7 +49,6 @@ const CERTS = [
   { title: 'Data Visualization with Kibana',               img: '/assets/img/certs/cert-kibana-600.png', url: 'https://ude.my/UC-781d5fe5-8656-433c-8533-b84a1cf17325', provider: 'Udemy' },
 ];
 
-// Render certifications
 const certGrid = document.getElementById('certGrid');
 if (certGrid) {
   CERTS.forEach(c => {

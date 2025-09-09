@@ -36,8 +36,6 @@ window.addEventListener('scroll', () => {
 toTop?.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
 
 // === Data (edit here) ===
-const USERNAME = 'nadeemahmed-dev';
-
 const CERTS = [
   { title: 'AWS Certified Solutions Architect – Associate', img: '/assets/img/certs/cert-aws-saa-600.png', url: 'https://www.credly.com/badges/16d97883-91d2-4d11-9e1b-7238f37c5daa?source=linked_in_profile', provider: 'Amazon Web Services' },
   { title: 'Complete Python Bootcamp',                     img: '/assets/img/certs/cert-python-bootcamp-600.png', url: 'https://ude.my/UC-509b1469-45c4-4d4b-a144-d89f1307ceec', provider: 'Udemy' },
@@ -49,13 +47,6 @@ const CERTS = [
   { title: 'Docker for Absolute Beginners',                img: '/assets/img/certs/cert-docker-beginners-600.png', url: 'https://ude.my/UC-eeb8039d-4449-4954-89b3-40372ebab64a', provider: 'Udemy / KodeKloud' },
   { title: 'Git Complete',                                 img: '/assets/img/certs/cert-git-complete-600.png', url: 'https://ude.my/UC-070e72d2-d2f0-4bcb-a748-a86fb892ae17', provider: 'Udemy' },
   { title: 'Data Visualization with Kibana',               img: '/assets/img/certs/cert-kibana-600.png', url: 'https://ude.my/UC-781d5fe5-8656-433c-8533-b84a1cf17325', provider: 'Udemy' },
-];
-
-const PROJECTS = [
-  // Replace with your real repos
-  { title: 'EKS Blue/Green Deployments', desc: 'GitOps with Argo CD, automated rollbacks, HPA; zero downtime.', link: `https://github.com/${USERNAME}/eks-bluegreen` },
-  { title: 'Terraform AWS Baseline',     desc: 'VPC, subnets, IGW/NAT, ALB, ASG; opinionated security defaults.', link: `https://github.com/${USERNAME}/tf-aws-baseline` },
-  { title: 'Observability Stack',        desc: 'Prometheus + Loki + Grafana on Kubernetes with alerting.', link: `https://github.com/${USERNAME}/obs-stack` }
 ];
 
 // Render certifications
@@ -73,21 +64,4 @@ if (certGrid) {
     certGrid.appendChild(card);
   });
 }
-
-// Render projects
-const projectGrid = document.getElementById('projectGrid');
-if (projectGrid) {
-  PROJECTS.forEach(p => {
-    const card = document.createElement('div');
-    card.className = 'project';
-    card.innerHTML = `<h4>${p.title}</h4><p>${p.desc}</p><a href="${p.link}" target="_blank" rel="noopener">Repo →</a>`;
-    projectGrid.appendChild(card);
-  });
-}
-
-// Contact form stub
-document.getElementById('contactForm')?.addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Thanks! This demo form is client-side only. I can wire this to Formspree/Netlify when you’re ready.');
-});
 

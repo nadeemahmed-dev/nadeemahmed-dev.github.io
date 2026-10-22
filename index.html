@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nadeem Ahmed — DevOps / Cloud Engineer</title>
-  <meta name="description" content="Portfolio of Nadeem Ahmed — DevOps / Cloud Engineer (AWS, Kubernetes, CI/CD, Security, Observability)." />
+  <title>Nadeem Ahmed — DevOps / SRE / Platform Engineer</title>
+  <meta name="description" content="Portfolio of Nadeem Ahmed — DevOps / SRE / Platform Engineer based in Dubai (AWS, Kubernetes, OpenShift, Terraform, CI/CD, SOC2)." />
   <meta name="theme-color" content="#0b1220">
-  <meta property="og:title" content="Nadeem Ahmed — DevOps / Cloud Engineer">
-  <meta property="og:description" content="AWS · Kubernetes · CI/CD · Security & Observability">
+  <meta property="og:title" content="Nadeem Ahmed — DevOps / SRE / Platform Engineer">
+  <meta property="og:description" content="AWS · Kubernetes · OpenShift · Terraform · CI/CD · SOC2 — Dubai, UAE">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="/assets/css/style.css?v=4">
+  <link rel="stylesheet" href="/assets/css/style.css?v=5">
 </head>
 <body>
   <a href="#main" class="sr-only">Skip to content</a>
@@ -17,7 +17,7 @@
   <header class="topbar" role="banner">
     <div class="container nav">
       <div class="brand">
-        <h1>Nadeem Ahmed — DevOps / Cloud Engineer</h1>
+        <h1>Nadeem Ahmed — DevOps / SRE / Platform Engineer</h1>
       </div>
       <nav class="navlinks" aria-label="Primary">
         <a href="#home">Home</a>
@@ -35,7 +35,8 @@
     <!-- Home -->
     <section id="home" class="hero" aria-labelledby="home-title">
       <h1 id="home-title" class="name">Nadeem Ahmed</h1>
-      <p class="subtitle">DevOps / Cloud Engineer • AWS • Kubernetes • CI/CD • Security</p>
+      <p class="subtitle">DevOps / SRE / Platform Engineer • AWS • Kubernetes • Terraform • CI/CD • SOC2</p>
+      <p class="tiny">Based in Dubai, UAE · Open to roles across the GCC · Available to join immediately</p>
       <div class="cta">
         <a class="btn" href="/docs/Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
         <a class="btn ghost" href="#contact">Contact</a>
@@ -46,7 +47,8 @@
     <div class="grid">
       <section id="about" class="card" aria-labelledby="about-title">
         <h2 id="about-title">About</h2>
-        <p>Experienced in AWS, Kubernetes, and CI/CD automation with a strong background in infrastructure security, monitoring, and cloud optimization. I build reliable, secure-by-default, cost-efficient platforms with clear observability.</p>
+        <p>DevOps / SRE Engineer with 7+ years of experience running secure, highly available AWS infrastructure. At Eltropy, I built the company's SOC2 programme from the ground up, helped make deployments ~50% faster with Jenkins, Argo CD, GitHub Actions and Terraform, and cut S3 storage from ~50 TB to ~36 TB in two months. Before that, at Hewlett Packard Enterprise, I built HPE Ezmeral and Red Hat OpenShift Kubernetes environments from scratch.</p>
+        <p>Based in Dubai, open to roles across the GCC and available to join immediately.</p>
       </section>
 
       <section id="skills" class="card" aria-labelledby="skills-title">
@@ -54,10 +56,16 @@
         <div class="chips">
           <span class="chip">AWS (EKS, EC2, ECS, S3, RDS, IAM, CloudWatch, CloudTrail)</span>
           <span class="chip">Kubernetes</span>
+          <span class="chip">OpenShift</span>
+          <span class="chip">HPE Ezmeral</span>
           <span class="chip">Docker</span>
+          <span class="chip">Helm</span>
+          <span class="chip">Terraform</span>
+          <span class="chip">Ansible</span>
           <span class="chip">Jenkins</span>
           <span class="chip">GitHub Actions</span>
           <span class="chip">Argo CD</span>
+          <span class="chip">Grafana</span>
           <span class="chip">ELK (Elasticsearch/Kibana)</span>
           <span class="chip">SOC2 / Vanta</span>
           <span class="chip">AWS Inspector</span>
@@ -76,26 +84,30 @@
 
       <article class="experience-role">
         <div class="role-head">
-          <h3 class="org">Eltropy — DevOps Engineer</h3>
-          <p class="meta">05/2021 – Current</p>
+          <h3 class="org">Eltropy — DevOps &amp; NOC Engineer</h3>
+          <p class="meta">05/2021 – 05/2025</p>
         </div>
         <ul>
-          <li>SOC2 compliance; AWS Inspector remediation; immutable AMIs.</li>
-          <li>S3 & Lambda security baselines (encryption, versioning, least privilege).</li>
-          <li>CI/CD with Jenkins, Argo CD, GitHub Actions; zero-downtime releases.</li>
-          <li>Kubernetes migration; observability; incident response.</li>
-          <li>SSL & SiteVPN management; automation & cost optimization.</li>
+          <li>Built the company's SOC2 programme from the ground up and ran it end to end, with controls and evidence in Vanta.</li>
+          <li>Led quarterly vulnerability management with AWS Inspector and Vanta; built golden AMIs rolled out through launch templates and Auto Scaling groups.</li>
+          <li>Migrated applications from EC2 to Kubernetes on Amazon EKS with Helm, HPA and Ingress.</li>
+          <li>Designed and optimised CI/CD pipelines with Jenkins, Argo CD, GitHub Actions and Terraform, helping make deployments ~50% faster.</li>
+          <li>Cut S3 storage from ~50 TB to ~36 TB in two months with lifecycle policies; decommissioned unused resources and right-sized infrastructure.</li>
+          <li>Reduced MTTR by automating fixes with Ansible and health checks; built CloudWatch alerting wired to SNS, Lambda and Slack.</li>
+          <li>Deployed Site-to-Site VPN tunnels with Terraform; managed SSL/TLS certificates, SSO and SFTP.</li>
         </ul>
       </article>
 
       <article class="experience-role">
         <div class="role-head">
-          <h3 class="org">Hewlett Packard Enterprise — Server Engineer</h3>
-          <p class="meta">01/2019 – 05/2021</p>
+          <h3 class="org">Hewlett Packard Enterprise — DevOps / Infrastructure Engineer</h3>
+          <p class="meta">03/2018 – 05/2021</p>
         </div>
         <ul>
-          <li>Root cause analysis; VMware/Windows/Linux setup; automation and cluster maintenance.</li>
-          <li>Hardware/networking; RAID storage; performance tuning.</li>
+          <li>Built HPE Ezmeral and Red Hat OpenShift Kubernetes environments from scratch during their early-stage adoption.</li>
+          <li>Deployed and managed Linux, Windows and VMware virtualised infrastructure for business-critical enterprise workloads.</li>
+          <li>Automated infrastructure deployment and routine tasks; ran root cause analysis and put preventive fixes in place.</li>
+          <li>Designed RAID storage and monitored system health, utilisation and capacity.</li>
         </ul>
       </article>
 
@@ -129,7 +141,7 @@
       <h2 id="contact-title">Contact</h2>
       <div class="contact-grid">
         <div class="contact-item">
-          <div class="kv"><strong>Email</strong><a href="mailto:nadeem.emailaddress@yahoo.com">nadeem.emailaddress@yahoo.com</a></div>
+          <div class="kv"><strong>Email</strong><a href="mailto:nadeem.emailaddress@gmail.com">nadeem.emailaddress@gmail.com</a></div>
           <div class="kv"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/ahmed-ned" target="_blank" rel="noopener">linkedin.com/in/ahmed-ned</a></div>
           <div class="kv"><strong>GitHub</strong><a href="https://github.com/nadeemahmed-dev" target="_blank" rel="noopener">github.com/nadeemahmed-dev</a></div>
         </div>
